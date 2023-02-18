@@ -1,0 +1,12 @@
+.food-display {
+  cursor: pointer;
+}
+
+.food-display:hover {
+  border: 1px solid black;
+}
+
+.pie-label {
+  font-size: 12px;
+  font-weight: 300;
+}
