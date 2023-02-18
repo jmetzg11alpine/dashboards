@@ -87,6 +87,7 @@ const Cricle = ({ data }) => {
   }, [data])
   return (
     <div>
+      <h5 className='text-center'>Total Cost of Each Category</h5>
       <div ref={svgRef}>
         <svg style={{ height: '35vh', width: '35vw' }}></svg>
       </div>

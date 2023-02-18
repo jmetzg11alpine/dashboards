@@ -71,6 +71,7 @@ const Bar = ({ data }) => {
 
   return (
     <div>
+      <h5 className='text-center'>Count of each item</h5>
       <div ref={svgRef}>
         <svg style={{ height: '40vh', width: '35vw' }}></svg>
       </div>
