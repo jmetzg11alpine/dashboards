@@ -27,14 +27,6 @@ const Bar = ({ data }) => {
     const yAxisG = container.append('g').attr('id', 'yBarG')
     yAxis(yAxisG)
     yAxisG.attr('transform', `translate(${bufferWidth}, 0)`)
-    container
-      .append('text')
-      .attr('text-anchor', 'end')
-      .attr('transform', 'rotate(-90)')
-      .attr('y', bufferWidth - 20)
-      .attr('x', -svgHeight / 2)
-      .text('Count')
-      .style('font-size', 15)
     // x axis
     const xAxisScale = d3
       .scaleLinear()
@@ -54,7 +46,7 @@ const Bar = ({ data }) => {
       .selectAll('text')
       .style('text-anchor', 'end')
       .attr('transform', 'rotate(-45)')
-      .style('font-size', '11')
+      .style('font-size', '9')
     // render bars
     const barWidth = (svgWidth - 2 * bufferWidth) / data.length - 4
     container

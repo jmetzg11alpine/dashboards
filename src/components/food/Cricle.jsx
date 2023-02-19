@@ -50,7 +50,7 @@ const Cricle = ({ data }) => {
       obj.startAngle = index === 0 ? 0 : (CUMSUM[index - 1] / SUM) * Math.PI * 2
       obj.endAngle = (CUMSUM[index] / SUM) * Math.PI * 2
       obj.innerRadius = (svgWidth / 2) * 0.001
-      obj.outerRadius = (svgHeight / 2) * 0.85
+      obj.outerRadius = (svgWidth / 2) * 0.55
       obj.id = index
     })
     const circleG = container
